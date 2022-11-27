@@ -7,13 +7,13 @@ import { RouterModule, Routes } from '@angular/router';
 //   WebComponentWrapperOptions,
 // } from '@angular-architects/module-federation-tools';
 
-const URL = 'http://localhost:3000/remoteEntry.js';
+// const URL = 'http://localhost:3000/remoteEntry.js';
 
 export const routes: Routes = [
-  {
-    path: 'remote-application',
-    // loadChildren: () => import('remote/Module').then(m => m.RemoteAppModule)
-  }
+  // {
+  //   path: 'remote-application',
+  //   // loadChildren: () => import('remote/Module').then(m => m.RemoteAppModule)
+  // }
 ];
 
 @NgModule({
