@@ -317,6 +317,5 @@
 				}
 			}
 		}
-	},
-	"defaultProject": "testing_micro_front_end"
+  }
 }
