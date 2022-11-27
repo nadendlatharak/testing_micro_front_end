@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-// import { loadRemoteModule } from '@angular-architects/module-federation';
+import { loadRemoteModule } from '@angular-architects/module-federation';
 // import {
 //   WebComponentWrapper,
 //   WebComponentWrapperOptions,
@@ -10,10 +10,10 @@ import { RouterModule, Routes } from '@angular/router';
 // const URL = 'http://localhost:3000/remoteEntry.js';
 
 export const routes: Routes = [
-  // {
-  //   path: 'remote-application',
-  //   // loadChildren: () => import('remote/Module').then(m => m.RemoteAppModule)
-  // }
+  {
+    path: 'remote-application',
+    loadChildren: () => import('remote/Module').then(m => m.RemoteAppModule)
+  }
 ];
 
 @NgModule({
