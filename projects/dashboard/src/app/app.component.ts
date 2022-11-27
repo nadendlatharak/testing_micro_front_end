@@ -11,7 +11,7 @@ export class AppComponent {
 
   constructor(private route: Router) {}
 
-  // openRemoteApp(){
-  //   // this.route.navigate(['remote-application'])
-  // }
+  openRemoteApp(){
+    this.route.navigate(['remote-application'])
+  }
 }
